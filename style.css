@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* nav bar*/
+
+.main-nav1 {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 1em;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav1 {
+        display: block;
+    }
+}
+
+.push {
+    margin-right: auto;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li {
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+li:hover {
+    font-weight: bold;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* main area*/
+
+.container2 {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    margin: auto;
+}
+
+#img {
+    width: 100%;
+    height:400px;
+
+}
+
+#text {
+    font-size: 20px;
+    text-align: justify;
+    margin: 30px;
+    margin-top: 40px;
+}
+
+.big {
+    font-size: 50px;
+}
+
+/* text over images */
+
+.container1 {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+}
+
+.container1:hover .overlay {
+    opacity: 0.5;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.orangebar {
+    background-color: orange;
+    height: 0.5rem;
+    margin: 5px;
+}
+
+.desc {
+    height: 20rem;
+    background-color: rgb(57, 141, 209);
+}
+
+span {
+    color: orange;
+}
+
+button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 1rem;
+    display: block;
+    margin: auto;
+    background-color: orange;
+    border: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container2 {
+        display: block;
+    }
+    .desc {
+        height: 30rem;
+    }
+}
+
+.big {
+    position: relative;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 50px;
+    }
+}
