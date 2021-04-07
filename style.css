@@ -49,6 +49,7 @@ a {
     display: grid;
     grid-template-columns: 33% 34% 33%;
     margin: auto;
+    padding-top: 200px;
 }
 
 #img {
