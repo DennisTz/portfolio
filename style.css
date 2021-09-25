@@ -4,6 +4,9 @@ body {
 }
 
 /* nav bar*/
+nav{
+    background-color: orange;
+}
 
 .main-nav1 {
     display: flex;
