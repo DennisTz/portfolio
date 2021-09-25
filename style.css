@@ -131,6 +131,13 @@ button {
     border: none;
 }
 
+button:hover {
+transition: 0.2s ease-out;
+    cursor    : pointer;
+    color     : #fff;
+    background: #e31837;
+}
+
 @media only screen and (max-width: 1200px) {
     .container2 {
         display: block;
