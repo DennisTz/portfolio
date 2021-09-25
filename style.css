@@ -145,6 +145,10 @@ button {
     animation: mymove 5s infinite;
 }
 
+.footer {
+    background-color: rgb(57, 141, 209);
+}
+
 @keyframes mymove {
     from {
         left: 0px;
